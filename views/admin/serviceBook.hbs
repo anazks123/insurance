@@ -1,0 +1,39 @@
+{{!-- <div style="margin-top: 10px;"> --}}
+  <style>
+    body{
+      background-color: rgb(0, 0, 0);
+    }
+  </style>
+<div class="container" style="margin-top: 10px; " >
+
+       {{#each result}}
+      <div class="card-body"  style="background-color: white;">
+      <div class="card-header" style="color: black;"> Name</div>
+      <h5 class="card-title" style="color: black; ">{{this.username}}</h5>
+      <div class="card-header" style="color: black;">Mail id</div>
+
+      <h5 class="card-title" style="color: black;">{{this.useremail}}</h5>
+      <div class="card-header" style="color: black;">Mobile</div>
+
+      <h5 class="card-title" style="color: black;">{{this.usermobile }}</h5>
+      <div class="card-header" style="color: black;">City</div>
+
+      <h5 class="card-title" style="color: black;">{{this.city}}</h5>
+      <div class="card-header" style="color: black;">Status</div>
+
+      <h5 class="card-title" style="color: black;">{{this.status}}</h5>
+      <div class="card-header" style="color: black;">Time</div>
+
+      <h5 class="card-title" style="color: black;">{{this.time}}</h5>
+        <div class="card-header" style="color: black;">Payment status</div>
+      <h5 class="card-title" style="color: black;">{{this.rs}}.Rs</h5>
+        
+      </div><br>
+
+
+
+{{/each}}
+</div>
+
+{{!-- 
+</div> --}}

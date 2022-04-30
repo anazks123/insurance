@@ -1,0 +1,22 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Policy Name</th>
+      <th scope="col">Policy ID</th>
+      <th scope="col">Discription</th>
+      <th scope="col">Monthly pay</th>
+      <th scope="col">Policy Type</th>
+    </tr>
+  </thead>
+  <tbody>
+      {{#each data}}
+    <tr>
+      <th scope="row">{{this.policyname}}</th>
+      <td>{{this.pid}}</td>
+      <td>{{this.dis}}</td>
+      <td>{{this.mnthlypay}}</td>
+       <td>{{this.ptype}}</td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>

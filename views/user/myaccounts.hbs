@@ -1,0 +1,16 @@
+ <style>
+   body{
+     background-color: black;
+   }
+ </style>
+<div class="container">
+    <div class="card" style="width: 18rem;">
+  <img src="https://images.pexels.com/photos/7821514/pexels-photo-7821514.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{user.username}}</h5>
+    <p class="card-text">{{user.email}}</p>
+     <p class="card-text">{{user.mobile}}</p>
+    <a href="/users/editData/{{user.id}}" class="btn btn-primary">EDIT DATA</a>
+  </div>
+</div>
+</div>

@@ -1,0 +1,33 @@
+<div class="container">
+ 
+  {{#each data}}
+  
+    <div class="card-body">
+      <div class="card-header" style="color: black;">Shop Name</div>
+      <h5 class="card-title" style="color: black; ">{{this.shopname}}</h5>
+
+      <div class="card-header" style="color: black;">Mail id</div>
+      <h5 class="card-title" style="color: black;">{{this.email}}</h5>
+
+      <div class="card-header" style="color: black;">Mobile</div>
+      <h5 class="card-title" style="color: black;">{{this.mobile }}</h5>
+
+      <div class="card-header" style="color: black;">City</div>
+      <h5 class="card-title" style="color: black;">{{this.city}}</h5>
+
+      {{!-- <div class="card-header" style="color: black;">Status</div>
+      <h5 class="card-title" style="color: black;">{{this.status}}</h5> --}}
+
+      {{!-- <div class="card-header" style="color: black;">Time</div>
+      <h5 class="card-title" style="color: black;">{{this.time}}</h5> --}}
+
+         <div class="card-header" style="color: black;">Payment Status</div>
+      <h5 class="card-title" style="color: black;">{{this.rs}}</h5>
+        <a href="/users/payNow/{{id}}"  class="btn btn-success">PayNow</a>
+
+    </div>
+
+
+{{/each}}
+
+</div>

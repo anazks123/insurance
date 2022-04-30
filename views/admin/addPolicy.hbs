@@ -1,0 +1,40 @@
+ <style>
+    body{
+      background-color: rgb(0, 0, 0);
+    }
+  </style>
+<div class="container" style="background-color: white; margin-top: 10px; width: 600px;">
+  <div class="row">
+  <h2 style="text-align:center; font-weight:bold; ">Add Policy</h2>
+  <form method="post" action="/addPolicy">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label" >Policy Name</label>
+    <input type="text" name="policyname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label" >Policy ID</label>
+    <input type="text" name="pid" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label" >Discription</label>
+    <input type="text" name="dis" class="form-control" id="exampleInputPassword1">
+  </div>
+<div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label" >Monthly Payment</label>
+    <input type="text" name="mnthlypay" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label"></label>
+    {{!-- <input type="text" name="ptype" class="form-control" id="exampleInputPassword1"> --}}
+    <select name="ptype" id="">
+      <option value="Life insurance">Life insurance</option>
+      <option value="vehicle insurance">Vehicle insurance</option>
+      <option value="Term insurance.">Term insurance</option>
+      <option value="Child insurance.">Child Insurance</option>
+    </select>
+  </div>
+  <button type="submit" class="btn btn-primary">Add</button>
+</form>
+</div>
+</div>

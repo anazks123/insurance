@@ -1,0 +1,25 @@
+<style>
+    body{
+        background-color: black;
+    }
+</style>
+<div class="container">
+<div class="row">
+    {{#each row}}
+    <div class="col sm-4">
+<div class="card" style="width: 22rem;">
+  <img src="https://images.pexels.com/photos/8441811/pexels-photo-8441811.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">PolicyName : {{this.policyname}}</h5>
+    <p class="card-text">Policy ID : {{this.pid}}</p>
+    <p class="card-text">Discription : {{this.dis}}</p>
+    <p class="card-text">Monthly Payment : {{this.mnthlypay}}</p>
+     <p class="card-text">Policy Type : {{this.ptype}}</p>
+    {{!-- <a href="/users/showP/{{this.id}} " class="btn btn-primary">Show Policies</a> --}}
+    <a href="/users/booknow/{{this.cid}} " class="btn btn-primary">Book Now</a>
+  </div>
+</div>
+    </div>
+    {{/each}}
+</div>
+</div>
