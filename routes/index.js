@@ -232,5 +232,34 @@ router.get('/logout',(req,res)=>{
   req.session.destroy();
   res.redirect('/')
 })
+router.get('/alert/:mail',(req,res)=>{
+  var email =req.params.mail;
+  let transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+      user: 'greencartkottayam@gmail.com',
+      pass: 'ashwinbabu@123',
+    },
+    tls:{
+      rejectUnauthorized : false,
+    },
+  });
+  let mailOptions = {
+    from: "team insurance ",
+    to: email,
+    subject: 'Payment alert',
+    text: `please pay your monthly insurance amount`
+  };
+  transporter.sendMail(mailOptions, function(error, info){
+    if (error) {
+      console.log(error);
+      res.redirect('/mechHome')
+    } else {
+      console.log('Email sent: ' + info.response);
+      res.redirect('/mechHome')
+    }
+  });
+
+})
 module.exports = router;
 
